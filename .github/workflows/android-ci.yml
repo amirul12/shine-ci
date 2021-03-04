@@ -10,10 +10,3 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-
-    - name: test
-      run: |
-        npm install
-        export GRADLE_USER_HOME=`pwd`./src/.gradle
-        chmod +x ./src/gradlew
-        ./src/gradlew -p ./src check
